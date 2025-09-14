@@ -1,0 +1,7 @@
+U:\13B\Backend\OOPalapok\OOPalapok\bin\Debug\OOPalapok.exe.config
+U:\13B\Backend\OOPalapok\OOPalapok\bin\Debug\OOPalapok.exe
+U:\13B\Backend\OOPalapok\OOPalapok\bin\Debug\OOPalapok.pdb
+U:\13B\Backend\OOPalapok\OOPalapok\obj\Debug\OOPalapok.csproj.AssemblyReference.cache
+U:\13B\Backend\OOPalapok\OOPalapok\obj\Debug\OOPalapok.csproj.CoreCompileInputs.cache
+U:\13B\Backend\OOPalapok\OOPalapok\obj\Debug\OOPalapok.exe
+U:\13B\Backend\OOPalapok\OOPalapok\obj\Debug\OOPalapok.pdb
