@@ -17,6 +17,21 @@ namespace OOPalapok
             nev = Nev;
             kor = Kor;
         }
+        public int Kor
+        {
+            get { return kor; }
+            set
+            {
+                if (value < 0)
+                {
+                    Console.WriteLine("Hiba: Az életkor nem lehet negatív!");
+                }
+                else
+                {
+                    kor = value;
+                }
+            }
+        }
         public string Kiir()
         {
             return $"A személy neve:{nev} és életkora {kor}";
@@ -30,6 +45,7 @@ namespace OOPalapok
         {
             Szemely person = new Szemely("Peti",22);
             System.Console.WriteLine(person.Kiir());
+
             
         }
     }
