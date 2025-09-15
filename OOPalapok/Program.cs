@@ -9,14 +9,34 @@ namespace OOPalapok
 {
     public class Szemely
     {
-        private string nev;
-        private int kor;
+        private string _nev;
+        private int _kor;
 
-        public Szemely(string Nev,int Kor)
+        public string Nev
+        {
+            get { return _nev; }
+            set { _nev = value; }
+        }
+         public int Kor
+        {
+            get { return _kor; }
+            
+            set 
+            {
+                if(value>0)
+                _kor = value;
+                else
+                    Console.WriteLine("Nem lehet negatív.");
+            }
+        }
+        /*public Szemely(string Nev,int Kor)
         {
             nev = Nev;
             kor = Kor;
         }
+        */
+
+
         public string Kiir()
         {
             return $"A személy neve:{nev} és életkora {kor}";
@@ -28,8 +48,12 @@ namespace OOPalapok
     {
         static void Main(string[] args)
         {
-            Szemely person = new Szemely("Peti",22);
-            System.Console.WriteLine(person.Kiir());
+            Szemely person = new Szemely();
+            person.Kor = 33;
+            Console.WriteLine(person.Kor);
+
+           /* Szemely person = new Szemely("Peti",22);
+            System.Console.WriteLine(person.Kiir());*/
             
         }
     }
