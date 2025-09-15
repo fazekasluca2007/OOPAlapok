@@ -65,6 +65,17 @@ namespace OOPalapok
     public class Hallgato : Szemely
     {
         private string _neptunKod;
+        public string NeptunKod
+        {
+            get { return _neptunKod; }
+            set
+            {
+                if (_neptunKod.Length <= 6)
+                    _neptunKod = value;
+                else
+                    Console.WriteLine("Túl hosszú kód!");
+            }
+        }
 
       
         public override string ToString()
