@@ -49,8 +49,9 @@ namespace OOPalapok
         static void Main(string[] args)
         {
             Szemely person = new Szemely();
-            person.Kor = 33;
-            Console.WriteLine(person.Kor);
+            person.Nev = "Kiss Ilona";
+            person.Kor = 23;
+            Console.WriteLine($"A személy neve:{person.Nev} és {person.Kor} éves");
 
            /* Szemely person = new Szemely("Peti",22);
             System.Console.WriteLine(person.Kiir());*/
