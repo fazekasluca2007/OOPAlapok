@@ -9,6 +9,7 @@ namespace OOPalapok
 {
     public class Szemely
     {
+<<<<<<< HEAD
         private string _nev;
         private int _kor;
 
@@ -30,13 +31,37 @@ namespace OOPalapok
             }
         }
         /*public Szemely(string Nev,int Kor)
+=======
+        private string nev;
+        private int kor;
+
+        public Szemely(string Nev,int Kor)
+>>>>>>> b697acaf912ea2052c789e7a9af8d1ec6dfea628
         {
             nev = Nev;
             kor = Kor;
         }
+<<<<<<< HEAD
         */
 
 
+=======
+        public int Kor
+        {
+            get { return kor; }
+            set
+            {
+                if (value < 0)
+                {
+                    Console.WriteLine("Hiba: Az életkor nem lehet negatív!");
+                }
+                else
+                {
+                    kor = value;
+                }
+            }
+        }
+>>>>>>> b697acaf912ea2052c789e7a9af8d1ec6dfea628
         public string Kiir()
         {
             return $"A személy neve:{nev} és életkora {kor}";
@@ -48,6 +73,7 @@ namespace OOPalapok
     {
         static void Main(string[] args)
         {
+<<<<<<< HEAD
             Szemely person = new Szemely();
             person.Nev = "Kiss Ilona";
             person.Kor = 23;
@@ -55,6 +81,11 @@ namespace OOPalapok
 
            /* Szemely person = new Szemely("Peti",22);
             System.Console.WriteLine(person.Kiir());*/
+=======
+            Szemely person = new Szemely("Peti",22);
+            System.Console.WriteLine(person.Kiir());
+
+>>>>>>> b697acaf912ea2052c789e7a9af8d1ec6dfea628
             
         }
     }
