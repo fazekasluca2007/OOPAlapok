@@ -61,6 +61,10 @@ namespace OOPalapok
 
         }
     }
+    public class Hallgato : Szemely
+    {
+        private string _neptunKod;
+    }
     internal class Program
     {
         static void Main(string[] args)
